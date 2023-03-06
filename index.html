@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI Universe Hub</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style/style.css">
+</head>
+
+
+<body>
+
+    <header class="text-center mt-lg-5">
+
+        <h1 class="fw-bold fs-1 my-4">AI Universe Hub</h1>
+        <button id="sort" type="button" class="btn btn-danger fs-5  p-lg-3 mb-lg-5 mb-3 fw-semibold rounded-4">Sort By Date</button>
+    </header>
+
+    <main id="container " class="mb-5">       
+        
+        <section>
+            <div id="ai-container" class="row row-cols-1 row-cols-md-3 g-4 mx-lg-5 mx-1">
+                
+              </div>
+        </section>
+          
+
+            
+
+
+        <!-- show all btn  -->
+
+            <div id="show-btn" class="text-center d-none mb-5 mt-5 ">
+                <div id="showAll-btn" class="btn btn-primary px-5 py-3 fs-5">Show All</div>
+            </div>
+
+            <!-- loading spinner  -->
+
+            <div id="loader" class="d-flex d-none justify-content-center align-items-center b">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+
+            <!-- show all button  -->
+
+    <section>
+        <div id="show-btn" class="text-center d-none mb-5 ">
+            <div id="showAll-btn" class="btn btn-primary px-5 py-3 fs-5">Show All</div>
+        </div>
+
+        <div id="loader" class="d-flex d-none justify-content-center align-items-center b">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </section>
+
+         <!-------------------- modal ---------- -->
+       
+
+        <section id="ai-modalContainer">
+            <div class="modal fade" id="aiDetails" tabindex="-1" aria-labelledby="exampleModal" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                                  <div class="modal-content">
+                                  <button type="button" class="btn-close bg-danger rounded-circle p-2" data-bs-dismiss="modal" aria-label="Close">
+                                  </button>
+                                  <div class="justify-content-between px-4 align-items-center">
+                                      <div class="modal-class p-5">
+                                          <div class="left-modal mx-4 border border-success bg-danger bg-opacity-25 p-3 border-opacity-10 rounded-4 mt-3">     
+                                              <h4 id="ai-description" class="model-description pt-3 text-dark-emphasis pb-2  "></h4>
+                                              <div class="price-cards justify-content-around pt-4 pb-4">
+                                                  <div  class="price price1 card px-2 pt-lg-3 pb-2  rounded-4 fs-5  text-center">
+                                                     <span id="price1" ></span><span id="plan1"></span>
+                                                    </div>
+                                                  <div class="price price2 card px-2 pt-lg-3 pb-2 rounded-4 fs-5 text-center"> 
+                                                    <span id="price2" ></span><span id="plan2"></span>
+                                                </div>
+                                                  <div  class="price price3 card px-2 py-2 rounded-4 fs-5  text-center">
+                                                     <span id="price3" ></span><span id="plan3"></span>
+                                                    </div>
+                                              </div>
+                                              <div class="d-flex justify-content-between text-start px-2">
+                                                  <div class="text-start">
+                                                      <h3 class="text-start fs-5">Features</h3>
+                                                      <ul id="Features" class="features-list text-light-emphasis fw-semibold ">
+                                                        
+                                                      </ul>
+                                                  </div>
+                                                  <div id="text-start">
+
+                                                      
+                                                  </div>
+                                              </div>
+                                          </div>
+                                          <div class="mx-4 border border-success bg-opacity-25 border-opacity-10 rounded-4 align-items-center text-center mb-3 mt-3">
+                                              <div id="modal-image" ></div>
+                                              <h2 id="question" class="fs-3 fw-bold mt-3 pt-2 pb-1"></h2>
+                                              <p id="ans" class="pt-1 text-light-emphasis px-2 fs-6 mt-3 fw-semibold pb-2">
+                      
+                                              </p>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          </div>`
+        </section>
+            
+
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
